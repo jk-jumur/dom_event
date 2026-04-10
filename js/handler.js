@@ -88,3 +88,33 @@
                document.getElementById('user-name').addEventListener('keyup', function(event){
                   console.log('typing', event.target.value);
                })
+
+
+   //simple github like delete confirmation button
+   
+   
+    document.getElementById('input-delete').addEventListener('keyup', function(event){
+                const text = event.target.value;
+                const btnDelete = document.getElementById('btn-delete');
+                 const  secretTag = document.getElementById('secret-info');
+                //  console.log('user is typing', text);
+                   
+                //ste2: condition check
+
+                if(text === 'delete'){
+                      console.log('delete typed')
+                      btnDelete.removeAttribute('disabled'); //ekhane exactly delete type korle disable ta enable hoye jabe
+
+                      secretTag.style.display = 'none';
+
+
+                }
+                else{
+                      console.log('something else')
+                      btnDelete.setAttribute('disabled', true) //ekhane delete theke onno kichu hole disabled hoye jabe.
+                  
+                }
+
+                
+            })
+           
