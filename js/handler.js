@@ -42,4 +42,49 @@
 
                  const nameP = document.getElementById('name');
                  nameP.innerText = name;
-             })       
+             }) 
+             
+             
+      
+     document.getElementById('btn-mouse')
+       .addEventListener('mouseenter', function(){
+              console.log('mouse  enter');
+       })
+
+    document.getElementById('btn-mouse-moved').addEventListener('mousemove', function(){
+           console.log('mouse moved');
+        })
+
+       document.getElementById('btn-mouse-out').addEventListener('mouseout', function(){
+             console.log('micky mouse minnie');
+
+       }) 
+       
+       
+
+       
+            //focus
+
+               document.getElementById('user-name').addEventListener('focus', function(){
+                  console.log('user about to write name')
+               })
+
+               document.getElementById('user-email').addEventListener('focus', function(){
+                  console.log('user about write to email')
+               })
+
+               //blur
+
+               document.getElementById('user-name').addEventListener('blur', function(){
+                   console.log('user done with name');
+               })
+
+               document.getElementById('user-email').addEventListener('blur', function(){
+                  console.log('user done with email');
+               })
+
+               //keydown
+
+               document.getElementById('user-name').addEventListener('keyup', function(event){
+                  console.log('typing', event.target.value);
+               })
