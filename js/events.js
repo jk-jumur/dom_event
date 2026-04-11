@@ -1,4 +1,4 @@
-// console.log('i am hagu koring');
+
 
 //  <!-- option 2 for click handler-->
   function makeYellow(){
