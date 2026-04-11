@@ -19,7 +19,7 @@
 
 
      document.getElementById('btn-upload-cv').addEventListener('click', function(){
-          //   console.log('i am hagu');
+      
           const pageTextElement = document.getElementById('page-text');
             console.log(pageTextElement);
                   
